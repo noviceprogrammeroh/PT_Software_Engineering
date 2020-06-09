@@ -124,11 +124,11 @@ for ( const  element of turtles)
 
 ///////////////////////////Methods, Revisited///////////////////////////////////////////////////////
 
-
+/*
 const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 
 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 
 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
-
+*/
 
 //console.log(favMovies.indexOf('Titanic'));
 
@@ -168,7 +168,7 @@ const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle'
 //console.log(favMovies)
 
 //9-store the value of your slice in a variable, console.log it 
-const results = favMovies.splice(8, 8);
+//const results = favMovies.splice(8, 8);
 
 //10- console.log your final results
 //console.log(results);
@@ -182,6 +182,7 @@ const results = favMovies.splice(8, 8);
 
 ///////////////////////////////////Where is Waldo///////////////////////////////////////////////////////////////////////
 
+/*
 const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
                     ["Lucinda", "Jacc", "Neff", "Snoop"],
                     ["Petunia", ["Baked Goods", "Waldo"]]];
@@ -203,6 +204,89 @@ const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
 //Access and console.log "Waldo"
 //console.log(whereIsWaldo [2] [0, 1] [1]);
 
+*/
+
+/////////////////////////////////////Excited kitten///////////////////////////////////////////////////////////////////
 
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+ 
+const kitchenSink = ["Dirty spoon", "sponge", "plate with gunk", "soap", "water"]; // 5 items so last index = 4
+for(let iteratorNumber = 0; iteratorNumber < kitchenSink.length; iteratorNumber++) {
+    console.log(iteratorNumber);
+    console.log("This is my kitchen sink " + kitchenSink[iteratorNumber]);
+}
+*/
+
+const kittyTalk = [ "...human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."]
+
+
+//meow = Math.floor((Math.random() * 3));
+
+let meow = 0;
+kittyTalk[meow]
+
+for ( i = 0 ; i <=  20; i++)
+{
+
+    console.log( "Love me, pet me! HSSSSSS!" )
+
+    if (i % 2 === 0)
+
+    {
+     console.log( kittyTalk[0], kittyTalk[1])
+    
+    }
+
+    else
+    {
+        console.log( kittyTalk [2]);
+    }
+    
+
+
+}
+
+
+
+
+/*
+    kittyTalk[meow]
+
+    let count = 0;
+
+for (count = 0; count <= 20; count++)
+{
+  
+
+if (count % 2 === 0)
+
+{
+ console.log(kittyTalk [0] [1])
+
+}
+
+else
+{
+    console.log(kittyTalk [2]);
+}
+
+}
+
+}
+
+
+
+*/
+
+ 
+///////////////////////////////Find the Median//////////////////////////////////////////////////////////////////
+
+//const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+//const convert =  Math.floor(nums.length / 2);
+
+//console.log(convert);
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
