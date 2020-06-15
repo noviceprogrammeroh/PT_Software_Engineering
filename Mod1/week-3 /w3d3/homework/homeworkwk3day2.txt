@@ -1,0 +1,45 @@
+Same product, different UX
+
+Discuss - Why do you think Heinz made this change?
+
+Heinz did this because for marketing purposes. The company knows that certain colors and
+Textures are more appealing than others. Humans tend to be more visual and corporations
+Utilize to attract more customers. 
+
+------------------------------------------------------------------------------------------
+
+How Super Mario Mastered Level Design - 5:42
+
+
+Discuss - How does this apply to web development?
+
+Super Mario game has an example of how web development can be applied in a game. From what I understood, the designer made sure that the game was intuitive as well as fun to play with. The game shows colors and figures that catch the players'attention. We can see that this game was carefully designed from beginning to end. 
+
+
+------------------------------------------------------------------------------------------
+
+Norman Doors
+
+Discuss - How does this apply to web development?
+
+I believe the video presenter has a point in saying that bad design can be misleading.
+A designer must able to create a product that is easy to use no the opposite. In web development, we apply the same concepts. A product that is designed poorly can cause frustration to the users and ruin the builder's reputation.
+In the case of web development, a program that is hard to maneuver or does not have any instructions can distract users and ultimately disappear from the market. I like the concepts of the designer Don Norman. He mentioned some important stages of the design of a product, discoverability, exploration and testing.
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+What's a site that you use all the time that has good UX?
+How is that site:
+Goal Focused
+Invisible
+Forgiving
+Consistent
+Smooth Onboarding
+
+
+
+I use different sites and search engines. I personally like google because it gives you too many choices. It is clear and easy to maneuver. It is very consistent and it has a simple and powerful UI. For web browser I use Firefox and Chrome. Both of them are simple and do the job. 
+---------------------------------------------------------------------------------------------------------------------------
+
