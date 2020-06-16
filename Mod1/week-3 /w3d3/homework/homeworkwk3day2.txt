@@ -43,3 +43,46 @@ Smooth Onboarding
 I use different sites and search engines. I personally like google because it gives you too many choices. It is clear and easy to maneuver. It is very consistent and it has a simple and powerful UI. For web browser I use Firefox and Chrome. Both of them are simple and do the job. 
 ---------------------------------------------------------------------------------------------------------------------------
 
+We're going to create the game tic-tac-toe ... but before we begin, what are some user stories that we'll want to make sure we cover?
+
+🐘 Reminder - Write from the perspective of the user: "As a user I want to be able to click on x and have y happen" or “As a ____, I need a ____ in order to ____”.
+
+Share your user stories in the tech-talk channel as you write them!
+
+I will start with breaking the program into parts:
+1- I will create functions that can perform what the user wants. I will create specifics taks
+   A)Ask the user to click on any box to start the game.
+   B)When the user clicks on the box, the box or will change into another color.
+   C)I will display a message to the user, let him / her know that only has 1 try.
+   C)And, finally display the loser or winner at the end of the game.
+
+
+2- The game will use conditional statements to determine the next player's move.
+For example:
+if (condition)
+{
+  if the player already select this box and this position, I want to perform this...
+}
+else
+{
+  if the player does not perform this, I want to this.
+}
+
+3- I will use for loops to iterate through the conditions
+
+A for loop will check if the user already completed certains talks and if the player completed the goal, then do this..
+
+for ( action = 0, action < completeTask; action)
+
+
+4- The game will also contain objects to store the numbers.
+Example:
+const select =
+ {
+    property:left,
+    Property: right,
+}
+   
+
+These instructions seem to be very simple but they are very clear. The user will know what to do when they click on the game.
+   
