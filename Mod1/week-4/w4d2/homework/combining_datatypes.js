@@ -41,7 +41,7 @@ const bottle = {
 
 const receipt = [
 
- items = { name: 'sales', price : '$3.50'}
+ items=  { name: 'sales', price : '$3.50'}
 
 
 ]
@@ -54,7 +54,7 @@ const receipt = [
  // be the names of the tenants. Log one of the elements of the inner array.
 
 
- apartmentBuilding = [
+ const apartmentBuilding = [
   ['Jose', 'Bryan', 'Kimberly', 'Angel', 'Hector']
 
  ];
@@ -71,18 +71,21 @@ const receipt = [
 
 const knit = () => {
 
-const obj ={
+    const obj ={
+    
+        item: 'scarf',
+        size: '6ft'
+    }
+    
+    
+    // display the element inside of the object
+    return obj.item
+    
+    }
+    
+    
+    //console.log(knit());  // this line of code will display sca
 
-    item: 'scarf',
-    size: '6ft'
-}
-
-
-//console.log(obj.item);    display the element inside of the object
-return obj.item
-
-}
-knit()
 /*----------------------------End-------------------------------------------------------------------*/
 
 
@@ -137,66 +140,50 @@ powerButton();
 //Model a Vending Machine Model a vending machine////////////////////////////////////////////////
 
 
-
 const vendingMachine = {
-snacks: [
-    {
- name: 'snickers',
- price: 1,
-    },
-
-    {
- name: 'twix',
- price: 2,
-    },
-
-   {
- name: 'starburts',
- price: 3,
-  }
-
-],
-
-
-
-vend: function vend(userInput){
-
-
-    
-
-
-    
-    switch(userInput) {
-        case 0:
-            console.log(vendingMachine.snacks[userInput])
-            break;
-        case 1:
-            console.log(vendingMachine.snacks[userInput])
-            break;
-        case 2:
-            console.log(vendingMachine.snacks[userInput])
-            break;    
-        case 3:
-            console.log(vendingMachine.snacks[userInput])
-            break;
-        default:
-            console.log('it aint working')
-
+    snacks: [
+        {name: 'Doritos', price: 2.50},
+        {name: 'Snickers', price: 1.50},
+        {name: 'Cheese Danish', price: 2.00}
+    ],
+    vend: function vend(userInput){
+        switch(userInput) {
+            case 0 :
+                return vendingMachine.snacks[0].name;
+                break;
+            case 'a':   
+             return vendingMachine.snacks[0].price;
+                break;
+            case 1:
+                return vendingMachine.snacks[1].name;
+                break;
             
+            case 'b':
+                return vendingMachine.snacks[1].price;
+                break;
+            
+                case 2:
+                return vendingMachine.snacks[2].name;
+                break;
+
+            case 'c':
+                return vendingMachine.snacks[1].price;
+                break;
+
+
+            default:
+                return 'Invalid item please select a different option.'
+        }
     }
-    
-    
-
-
-
-
 }
+console.log(vendingMachine.vend(0),  vendingMachine.vend('a')); // this line of code will display both the name and the price if user select 0a.
+console.log(vendingMachine.vend(1),  vendingMachine.vend('b'));
+console.log(vendingMachine.vend(2),  vendingMachine.vend('c'));
+console.log(vendingMachine.vend(3));
 
 
 
 
-
-}
 
 //console.log(vendingMachine.vend(2)); // this code displays the  user's selection. Starburts
 
@@ -308,10 +295,11 @@ bar();
 //What is meant by the error(s) this produces?
 // missing initiliazer in const declaration. It  is missin the assignment operator.
 
+/*
 foo();
 
-const foo  ()=>{
+//const foo  ()=>{
     console.log('hi');   
-}
-
+//}
+*/
 /*------------------------------------End-------------------------------------------------------*/

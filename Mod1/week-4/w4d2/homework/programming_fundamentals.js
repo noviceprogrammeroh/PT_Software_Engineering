@@ -51,6 +51,7 @@ const f = l => {                        // we are creating a function with one p
     while (c <= l) {                    // we are using a while loop to make the code inside to perform a mathematical calculation
       n = c + p;                        // we are adding variable, c and p and assign them to n. 
       [c, p] = [n, c]                   // this one, I'm not sure, but I think it has to do with a set of elements
+                            
       es += (c % 2 === 0) ? c : 0       // we are using the conditional ternary operator that takes three operands. First one is a conditiona(thruthy), 
     }                                   // the second one is executed if is falsy. Basically a shorcut of the if statament
     return es                           // returning es. (The code on the previous line was assigned to the variable es)
@@ -62,7 +63,7 @@ const f = l => {                        // we are creating a function with one p
   //At first we may strive for the shortest code possible. But we really should be striving for readable code that is easy to maintain.
   // Compare the same solution with more semantic variable names (feel free to use this one to help you figure out what is happening in this function:
 
-
+                            
 
   const f2 = (limit) => {    // we are creating a function that takes a parameter and we are initilizing variables. Then we are creating a while loop
 
@@ -77,7 +78,7 @@ const f = l => {                        // we are creating a function with one p
         evenSum += current;
       }
     }
-    return evenSum;
+    return evenSum;             // this function I think is called Even Fibonacci Numbers
   }
   
   
