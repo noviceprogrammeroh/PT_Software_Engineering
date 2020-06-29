@@ -128,7 +128,7 @@ buyHamster(hamster)
     
     this.hamsters.push(hamster)
       this.mood += 10;       
-      this.bankAccount = this.bankAccount - hamster.price;
+      this.bankAccount = this.bankAccount - hamster.price; //this option subract price of the hamster from balance. 
      
 
 
