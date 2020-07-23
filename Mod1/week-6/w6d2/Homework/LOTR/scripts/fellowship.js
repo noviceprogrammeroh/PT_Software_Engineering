@@ -39,12 +39,17 @@ const makeMiddleEarth = () => {
 
   // HINT: Make a console.log for each of your functions to make sure that, when you click, the correct function is being called!
   console.log('making Middle Earth');
+  
   // console.log("Trying to make middle earth.");
 
   // 1. create a section tag with an id of middle-earth
-
+  const $section =$('<section>').attr("id", "making Middle Earth")
+  
+  
   // 2. append the section to the body of the DOM.
-
+  $('body').append($section);
+  
+ 
   // 3. use a for loop to iterate over the lands array that does the following:
 
   //   3a. creates an article tag (there should be one for each land when the loop is done)
@@ -53,8 +58,19 @@ const makeMiddleEarth = () => {
 
   //   3c. includes an h1 with the name of the land inside each land article
 
-  //   3d. appends each land to the middle-earth section
 
+  //   3d. appends each land to the middle-earth section
+  
+
+
+  for(let i = 0; i < lands.length; i++){
+   let $article = $('<article>').attr("id", lands[i]);   
+   
+   const $h1 = $('<h1>').text( lands[i]);
+   const $mainArt = $($article).append($h1);
+   console.log($mainArt[0])  ;
+  }
+  
 };
 
 // COMMIT YOUR WORK
