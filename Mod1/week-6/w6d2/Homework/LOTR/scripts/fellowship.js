@@ -5,7 +5,7 @@ const hobbits = [
   'Frodo Baggins',
   'Samwise \'Sam\' Gamgee',
   'Meriadoc \'Merry\' Brandybuck',
-  'Peregrin \'Pippin\' Took'
+  'Peregrin \'Pippin\' Took',
 ];
 
 const buddies = [
@@ -13,14 +13,14 @@ const buddies = [
   'Legolas',
   'Gimli',
   'Strider',
-  'Boromir'
+  'Boromir',
 ];
 
 const baddies = [
   "Sauron",
   "Saruman",
   "The Uruk-hai",
-  "Orcs"
+  "Orcs",
 ];
 
 
@@ -36,42 +36,33 @@ const lands = ['The-Shire', 'Rivendell', 'Mordor'];
 // Chapter 1
 // ============
 const makeMiddleEarth = () => {
-
-  // HINT: Make a console.log for each of your functions to make sure that, when you click, the correct function is being called!
-  console.log('making Middle Earth');
-  
-  // console.log("Trying to make middle earth.");
-
-  // 1. create a section tag with an id of middle-earth
-  const $section =$('<section>').attr("id", "making Middle Earth")
-  
-  
-  // 2. append the section to the body of the DOM.
-  $('body').append($section);
-  
  
-  // 3. use a for loop to iterate over the lands array that does the following:
+  // HINT: Make a console.log for each of your functions to make sure that, when you click, the correct function is being called!
+  console.log('making Middle Earth');  
 
-  //   3a. creates an article tag (there should be one for each land when the loop is done)
+// 1. create a section tag with an id of middle-earth
+const section = $('<section>').attr("id", "#middle-earth")
 
-  //   3b. gives each land article an `id` tag of the corresponding land name
+// 2. append the section to the body of the DOM.
+$('body').append(section);
+// 3. use a for loop to iterate over the lands array that does the following:
+for (let i = 0; i < lands.length; i++) {
+//   3a. creates an article tag (there should be one for each land when the loop is done)
+const article = $('<article>')
+//   3b. gives each land article an `id` tag of the corresponding land name
 
-  //   3c. includes an h1 with the name of the land inside each land article
+ article.attr("id", lands[i]);
+//   3c. includes an h1 with the name of the land inside each land article
 
+ article.html('<h1>' + lands[i] + '</h1>');
+//   3d. appends each land to the middle-earth section
+ section.append(article);
 
-  //   3d. appends each land to the middle-earth section
-  
-
-
-  for(let i = 0; i < lands.length; i++){
-   let $article = $('<article>').attr("id", lands[i]);   
-   
-   const $h1 = $('<h1>').text( lands[i]);
-   const $mainArt = $($article).append($h1);
-   console.log($mainArt[0])  ;
-  }
-  
+ console.log(article)
+}
+ 
 };
+makeMiddleEarth(lands);
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 1 complete - Made Middle Earth".
@@ -84,16 +75,25 @@ const makeHobbits = () => {
   // Goal: display an unordered list of hobbits in the shire (which is the first article tag on the page)
 
   // 1. create a 'ul'
+    console.log('Make hobbits');
+  
+   // 1. display an unordered list of the hobbits in the shire.
+  // 2. give each hobbit a class of "hobbit"
+  // hint: create a 'ul' outside the loop upon which to append the 'li'
+  $('#The-Shire').append(`<ul class="hobbitList"></ul>`);
 
-  // 2. make each hobbit an li element and append it to the 'ul' you just created
-    // hint: use the given 'hobbits' array and use a for loop
+  
+  for(let i = 0; i < hobbits.length; i++){
 
-  // 3. also, give each hobbit (`li`) a class of "hobbit"
+  $('.hobbitList').append(`<li class="hobbit">${hobbits[i]}</li>`);
+    
+  }
 
-  // 4. append the ul to the shire
-    // hint: get 'The-Shire' by using its id
 
-};
+ // hint: get 'The-Shire' by using its id
+  };
+  makeHobbits(hobbits);
+
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 2 complete - Made the Hobbits".
@@ -103,14 +103,24 @@ const makeHobbits = () => {
 // ============
 const keepItSecretKeepItSafe = () => {
 
+  console.log('Give Frodo the ring')
   // 1. create an empty div with an id of 'the-ring'
-
+ 
+  $('<div/>').attr('id', 'the-ring');
   // 2. add the ring as a child of Frodo
-    // hint: Frodo does not have an id, but there is a command to retrieve all elements with a certain class. This should give you an array for you to access . . .
+ 
+  // 2. add the ring as a child of Frodo
+  //$('<div/>').attr('id', 'the-ring');
+  $('.hobbit').eq(0).append('<div id="the-ring"></div>');
 
-    // when you think you have given Frodo the ring, check in your Elements tab to see that it works correctly
+  // hint: Frodo does not have an id, but there is a command to retrieve all elements with a certain class. This should give you an array for you to access . . .
+
+  // when you think you have given Frodo the ring, check in your Elements tab
+
 
 };
+
+
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 3 complete - Made the ring and gave it to Frodo".
@@ -120,13 +130,21 @@ const keepItSecretKeepItSafe = () => {
 // ============
 const makeBaddies = () => {
 
-  // 1. display an unordered list of baddies in Mordor
+// 1. display an unordered list of baddies in Mordor
 
-  // 2. give each of the baddies a class of "baddy"
+ $('#Mordor').append(`<ul class="baddies"></ul>`);
+ //console.log(ulistVar) testing
 
-  // 3. remember to append the ul to Mordor
+// 2. give each of the baddies a class of "baddy"
+
+for(let i = 0; i < baddies.length; i++){
+   $('.baddies').append(`<li class="baddy">${baddies[i]}</li>`);
+ 
+  }
 
 };
+
+makeBaddies(baddies);
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 4 complete - Made the Baddies"..
@@ -134,17 +152,21 @@ const makeBaddies = () => {
 // ============
 // Chapter 5
 // ============
+
 const makeBuddies = () => {
 
   // 1. create an aside tag and append it to middle-earth below mordor
-
+      $('#Mordor').append(`<aside class="aside"></aside>`);
   // 2. display an unordered list of buddies in the aside
-
+     $('.aside').append(`<ul class="buddies"></ul>`);
+      
   // 3. give each of the buddies a class of "buddy"
-
-  // 4. don't forget to append them to the aside
-
+      for(let i = 0; i < buddies.length; i++){
+        $('.buddies').append(`<li class="buddy">${buddies[i]}</li>`);
+      }
 };
+makeBuddies();
+
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 5 complete - Made the Buddies".
@@ -157,7 +179,15 @@ const leaveTheShire = () => {
   // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
       // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
 
+      console.log('Leave the shire')
+      // 1. grab the hobbits (the ul in which they reside) and move them to Rivendell
+      
+      $('.hobbit').detach().appendTo('#Rivendell')
+      // hint: the hobbits ul is a childNode of The-Shire-- there is way to get a list of childNodes
+      
+
 };
+leaveTheShire();
 
 // COMMIT YOUR WORK
 // The commit message should read: "Chapter 6 complete - Left the Shire"
@@ -165,10 +195,13 @@ const leaveTheShire = () => {
 // ============
 // Chapter 7
 // ============
-const beautifulStranger = () => {
 
-  // 1. change the buddy 'Strider' textnode to "Aragorn"
-     // hint: You can get a list of elements by tag name, such as 'aside'
+
+  const beautifulStranger = () => {
+
+    // 1. change the buddy 'Strider' textnode to "Aragorn"
+  
+    // hint: You can get a list of elements by tag name, such as 'aside'
 
 };
 

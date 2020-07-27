@@ -21,10 +21,10 @@ body {
   background-image:url(../images/middle-earth.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: BilboBold, Copperplate, "Copperplate Gothic Light", fantasy;
+  font-family: 'Times New Roman', Times, serif, Copperplate, "Copperplate Gothic Light", fantasy;
   text-transform: lowercase;
-  color: white;
-  text-shadow: 2px 2px #000000;
+  color: rgb(50, 42, 42);
+  text-shadow: 2px 2px #ad1313;
 }
 
 .overlay {
@@ -37,7 +37,9 @@ body {
 }
 
 section {
-  font-weight: bold;
+
+  color: #000000;
+  font-weight:  bold;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -56,26 +58,26 @@ article li {
 article:hover {
   text-shadow: 2px 2px 8px black;
 }
-/* The Shire */
+
 article:nth-child(1) {
   top: 35%;
   left: 21%;
 }
 
-/* Rivendell */
+
 article:nth-child(2) {
   left: 47%;
   top: 34%;
 }
 
-/* Mordor */
+
 article:nth-child(3) {
   left: 71%;
   top: 81%;
-  /*background: url(../images/eye_of_sauron.png) no-repeat;*/*/
+  /*background: url(../images/eye_of_sauron.png) no-repeat;
   background-position: 0em;
   background-size: 7em;
-  height: 25%;
+  height: 25%; */
 }
 
 article:nth-child(3) h1:hover {
@@ -105,11 +107,15 @@ ul {
   margin: auto;
 }
 
+aside {
+  display: flex;
+  justify-content: left;
+}
 
-/*aside {
-  display: inline-block;
-}*/
 
+aside ul {
+  width: 20%;
+}
 
 
 
@@ -160,4 +166,5 @@ ul {
     top: 385px;
   }
 
+}
 }
