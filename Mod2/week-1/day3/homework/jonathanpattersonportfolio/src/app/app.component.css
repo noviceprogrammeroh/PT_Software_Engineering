@@ -46,19 +46,12 @@ body{
     line-height: 75px;
     font-size: 20px;
   }
-
-
-
-
-
-
-
-
  
 
 .flexbox-container {
 
 display: flex;
+background-color: rgb(124, 105, 91); 
 
 
 }
@@ -112,9 +105,3 @@ flex:1;
                 
 }
 
-.flexbox-item-6{
-flex:1;            
-             
- }
-
- 
