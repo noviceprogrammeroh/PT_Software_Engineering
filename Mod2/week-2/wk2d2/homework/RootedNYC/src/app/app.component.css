@@ -1,0 +1,98 @@
+
+
+.heading{
+
+    background-image: url(https://cdn.shopify.com/s/files/1/2781/9558/files/DSC02397_1_1800x.png?v=1587704398);
+    height: 900px ;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: auto;
+    text-align: center;
+   
+
+}
+
+.insideheading
+
+{
+    
+ font-family: sans-serif;
+ color: ivory;
+ font-size: 30px;
+ padding: 450px;
+ height: 50px;
+
+
+}
+
+.btn-primary
+{  height: 30px;
+    margin: 5px;
+}
+
+
+.btn-secondary
+{   height: 30px;
+    margin: 5px;
+}
+
+#jungleboxheading{
+font-size: 35px;
+color: lightcoral;
+
+
+
+
+}
+
+
+.misteryheading{
+    float: right;
+    clear: both;
+    float: right;
+    margin: 0px 10px 0px 0px;
+    padding-top: 130px ;
+    padding-right: 170px ;
+    width: 418px;
+    height: 418px;
+ 
+   }
+
+
+
+
+/* blockquote */
+
+.message {
+    padding-top: 60px;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center ;
+}
+
+.dot { 
+    height: 80px;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+   
+  }
+
+
+  .misteryjungleimage{
+    height: 600px;
+    width: 400px;
+    padding-top: 125px;
+    padding-left: 280px ;
+ 
+  }
+
+/*paragraphs*/
+
+  .para{
+
+   font-family: sans-serif;
+
+
+  }
